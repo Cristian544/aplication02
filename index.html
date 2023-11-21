@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <script src='../js/main.js'></script>
+</head>
+
+<body>
+    <div id="home" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <form action="show.php" method="post">
+                    <div class="field">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="field">
+                        <label for="country">País:</label>
+                        <select name="country" id="country" required>
+                            <option value="">Seleccione su país</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Panamá">Panamá</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="Departament">Departamento:</label>
+                        <select name="Departament" id="Departament" required>
+                            <option value="">Seleccione su Departamento</option>
+                            <option value="amazonas">Amazonas</option>
+                            <option value="antioquia">Antioquia</option>
+                            <option value="arauca">Arauca</option>
+                            <option value="atlantico">Atlántico</option>
+                            <option value="bogota">Bogotá, D.C.</option>
+                            <option value="bolivar">Bolívar</option>
+                            <option value="boyaca">Boyacá</option>
+                            <option value="caldas">Caldas</option>
+                            <option value="caqueta">Caquetá</option>
+                            <option value="casanare">Casanare</option>
+                            <option value="cauca">Cauca</option>
+                            <option value="cesar">Cesar</option>
+                            <option value="choco">Chocó</option>
+                            <option value="cordoba">Córdoba</option>
+                            <option value="cundinamarca">Cundinamarca</option>
+                            <option value="guainia">Guainía</option>
+                            <option value="guaviare">Guaviare</option>
+                            <option value="huila">Huila</option>
+                            <option value="la-guajira">La Guajira</option>
+                            <option value="magdalena">Magdalena</option>
+                            <option value="meta">Meta</option>
+                            <option value="nariño">Nariño</option>
+                            <option value="norte-de-santander">Norte de Santander</option>
+                            <option value="putumayo">Putumayo</option>
+                            <option value="quindio">Quindío</option>
+                            <option value="risaralda">Risaralda</option>
+                            <option value="san-andres-providencia-santa-catalina">San Andrés, Providencia y Santa Catalina</option>
+                            <option value="santander">Santander</option>
+                            <option value="sucre">Sucre</option>
+                            <option value="tolima">Tolima</option>
+                            <option value="valle-del-cauca">Valle del Cauca</option>
+                            <option value="vaupes">Vaupés</option>
+                            <option value="vichada">Vichada</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="c_p">Preferencias de contacto:</label>
+                        <input type="checkbox" value="ce" name="c_p[]" id="c_p_1">
+                        Correo elctrónico
+                        <input type="checkbox" value="cel" name="c_p[]" id="c_p_2">
+                        Celular
+                        <input type="checkbox" value="sms" name="c_p[]" id="c_p_3">
+                        SMS
+                    </div>
+
+                    <div class="field">
+                        <label for="gender">Genero biológico:</label>
+                        <input type="radio" value="M" name="gender" id="gender_1" required>
+                        Masculino
+                        <input type="radio" value="F" name="gender" id="gender_2" required>
+                        Femenino
+                        <input type="radio" value="O" name="gender" id="gender_3" required>
+                        Otro
+                    </div>
+                    <div class="field">
+                        <label for="birthdate">Fecha De Nacimiento</label>
+                        <input type="date" max="2005-10-16">
+                    </div>
+                    <div class="field">
+                        <label for="p_m">Mensaje de presentación:</label>
+                        <textarea name="p_m" id="p_m" rows="3"></textarea>
+                    </div>
+                    <div class="field">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
